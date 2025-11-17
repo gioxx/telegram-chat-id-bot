@@ -2,6 +2,11 @@
 
 A simple Telegram bot that sends you the ID of any group or channel when you add it.
 
+> [!NOTE]  
+> I have started a demo container so you can try out the bot. You can find it on Telegram: [@gwall_chatid_bot](https://t.me/@gwall_chatid_bot). Feel free to launch it and use it.  
+> Heads-up: this is hosted on a Raspberry Pi at home (best-effort availability).
+> It may be temporarily unreachable, please don’t rely on it for production.
+
 ## Features
 
 - Automatically detects when added to a group or channel
