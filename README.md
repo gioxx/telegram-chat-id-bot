@@ -7,6 +7,13 @@ A simple Telegram bot that sends you the ID of any group or channel when you add
 > Heads-up: this is hosted on a Raspberry Pi at home (best-effort availability).
 > It may be temporarily unreachable, please don’t rely on it for production.
 
+[![](https://img.shields.io/github/issues/gioxx/telegram-chat-id-bot.svg)](https://github.com/gioxx/telegram-chat-id-bot/issues)
+[![](https://img.shields.io/github/issues-pr-raw/gioxx/telegram-chat-id-bot.svg)](https://github.com/gioxx/telegram-chat-id-bot/pulls)
+![MIT License](https://img.shields.io/github/license/gioxx/telegram-chat-id-bot)
+![Docker](https://img.shields.io/badge/Docker-ready-blue?logo=docker)
+[![](https://img.shields.io/docker/pulls/gfsolone/telegram-chat-id-bot.svg)](https://hub.docker.com/r/gfsolone/telegram-chat-id-bot)
+[![](https://img.shields.io/docker/image-size/gfsolone/telegram-chat-id-bot/latest.svg)](https://hub.docker.com/r/gfsolone/telegram-chat-id-bot)
+
 ## Features
 
 - Automatically detects when added to a group or channel

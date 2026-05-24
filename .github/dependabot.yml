@@ -1,10 +1,11 @@
 version: 2
 updates:
+  # Python dependencies in backend/
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
-      interval: "daily"
-    open-pull-requests-limit: 3
+      interval: "weekly"
+    open-pull-requests-limit: 5
     rebase-strategy: "auto"
     labels:
       - "dependencies"
@@ -13,10 +14,21 @@ updates:
       prefix: "deps"
       include: "scope"
 
+  # Dockerfile in root
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+    labels:
+      - "dependencies"
+      - "docker"
+    commit-message:
+      prefix: "deps"
+      include: "scope"
+  - package-ecosystem: "docker-compose"
+    directory: "/"
+    schedule:
+      interval: "weekly"
     labels:
       - "dependencies"
       - "docker"
@@ -24,10 +36,11 @@ updates:
       prefix: "deps"
       include: "scope"
 
+  # GitHub Actions workflows
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
     labels:
       - "dependencies"
       - "github-actions"
