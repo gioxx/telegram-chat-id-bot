@@ -20,11 +20,15 @@ A simple Telegram bot that sends you the ID of any group or channel when you add
 - Sends a private message with the chat ID to the user who added it
 - Works with both groups and channels
 - Simple `/start` command for instructions
+- Dedicated `/chatid` command for the current chat ID
+- Dedicated `/myid` command for the numeric user ID
 
 ## Commands
 
 - `/start` - Get bot instructions
-- `/getid` - Get the current chat ID (works in groups, channels, and private chats)
+- `/chatid` - Get the current chat ID (works in groups, channels, and private chats)
+- `/getid` - Backward-compatible alias for `/chatid`
+- `/myid` - Get your numeric Telegram user ID
 
 ## Setup
 
@@ -56,3 +60,5 @@ docker-compose up -d
 1. Start the bot with `/start` command in private chat
 2. Add the bot to any group or channel
 3. Receive the group/channel ID in your private chat with the bot
+4. Use `/chatid` whenever you need the current chat ID
+5. Use `/myid` whenever you need your numeric user ID

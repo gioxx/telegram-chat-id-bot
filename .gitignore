@@ -64,3 +64,4 @@ Pipfile.lock
 
 # VSCode
 .vscode/
+.tokensave
